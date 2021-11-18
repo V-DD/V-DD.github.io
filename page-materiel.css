@@ -1,0 +1,317 @@
+@font-face{font-family: 'Lobster-Regular';src: url(polices/Lobster-Regular.ttf);}
+@font-face{font-family: 'Poppins-Regular';src: url(polices/Poppins-Regular.ttf);}
+@font-face{font-family: 'Poppins-Bold';src: url(polices/Poppins-Bold.ttf);}
+@font-face{font-family: 'Poppins-Medium';src: url(polices/Poppins-Medium.ttf);}
+@font-face{font-family: 'Poppins-SemiBold';src: url(polices/Poppins-SemiBold.ttf);}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url("assets/parquc.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    font-family: 'Poppins-Medium', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: max(5vw, 23px);
+    color: white;
+}
+
+p{
+    font-size: max(0.85vw, 10px);
+}
+
+.titre-bold{
+    font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+    font-size: max(1.8em 1.2em);
+    color: #509B97;
+}
+.titre-medium{
+    font-family: 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #509B97;
+}
+
+#conteneur{
+    position: relative;
+    top:0;
+    margin:0vw 7vw 0vw;
+}
+
+#fond1{
+    background-image: url("assets/materiel4b.png");
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fond2{
+    background-image: url("assets/appareil10.jpg");
+}
+
+#fond3{
+    background-image: url("assets/objectif11.jpg");
+}
+
+#fond4{
+    background-image: url("assets/memoire.jpg");
+}
+
+#fond5{
+    background-image: url("assets/trepieds7.jpg");
+}
+
+#fond1, #fond2, #fond3, #fond4, #fond5{
+    min-height: 95vh;
+    margin:0;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px inset rgb(28, 13, 0);
+    box-shadow: 0px 0px 5px 2px black, inset 0px 0px 20px 3px black;
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-fond1, .p-fond2, .p-fond3, .p-fond4, .p-fond5{
+    width: max(65vw, 700px);
+    margin: 2vw 0vw;
+    padding: 2vw;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.782), -0.4px -0.4px 0px black;
+    border-radius: 10px;
+    border: 1px inset rgba(65, 32, 1, 0.782);
+    box-shadow: 0px 0px 5px 2px black, inset 0px 0px 30px 5px black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*--Navigation--*/
+
+.nav{
+    position: relative;
+    z-index: 2;
+}
+
+.nav-menu{
+    display: flex;
+    height: 70px;
+}
+
+.nav-brand{
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav .nav-brand img{
+    width: 110px;
+    position: absolute;
+    margin: 0px 15px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 24px;
+    
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins-Regular';
+}
+
+.nav-items .nav-link a{
+    color: white;
+    
+}
+
+.nav-link{
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.nav-link:nth-child(3){
+    min-width: 160px;
+}
+
+
+/*--Navigation x--*/
+
+/*--footer--*/
+footer{
+    background-color: #509B97;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+    padding: 0px 15px;
+    font-size: 24px;
+  }
+  
+.social-network{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.social-network a{
+    color: white;
+}
+
+/*--footer x--*/
+
+
+
+
+
+
+@media only screen and (max-width: 1141px){
+    .nav-link:nth-child(3){
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-device-width: 800px)
+{
+    #fond1, #fond2, #fond3, #fond4, #fond5{
+        min-height: 80vh;
+    }
+    #fond1{
+        background-attachment: scroll;
+    }
+    #fond2, #fond3, #fond4{
+        background-attachment: fixed;
+        background-size: 110%, cover;
+        background-repeat: repeat;
+    }
+    #fond2{
+        background-image: url("assets/appareil7.jpg");
+    }
+    #fond3{
+        background-image: url("assets/objectif7.jpg");
+    }
+
+    #fond4{
+        background-image: url("assets/memoire2.jpg");
+    }
+    #fond5{
+        background-image: url("assets/trepieds7.jpg");
+        background-size: 120%, cover;
+        background-repeat: repeat;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    /*--navbar--*/
+
+    .nav{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 340px;
+        flex-direction: column;
+        width: 200px;
+        
+    }
+
+    .nav .nav-brand img{
+        display: flex;
+        width: 150px;
+        align-items: center;
+    }
+
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+       position: relative;
+    }
+    
+    .nav-brand{
+        position: absolute;
+        position: relative;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .nav-items .nav-link{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #509B97;
+        margin: 6px 0px; 
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    /*--navbar x--*/
+
+        /*--footer--*/
+
+        footer{
+            background-color: #509B97;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 70px;
+            padding: 15px 0px;
+            color: white;
+            font-family: 'Poppins-Regular';
+            font-size: 20px;
+        }
+          
+        .social-network{
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+        /*-- footer x--*/
+
+}
+
+
+@media screen and (max-device-width: 340px)
+{
+    h1{
+        font-size: max(5vw, 18px);
+    }
+
+    footer{
+        font-size: 20px;
+    }
+}

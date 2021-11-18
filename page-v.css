@@ -1,0 +1,409 @@
+@font-face{font-family: 'Poppins-Regular'; src: url(polices/Poppins-Regular.ttf);}
+@font-face{font-family: 'Poppins-Medium.'; src: url(polices/Poppins-Medium.ttf);}
+@font-face{font-family: 'Poppins-Bold'; src: url(polices/Poppins-Bold.ttf);}
+@font-face{font-family: 'poppins-regular'; src: url(polices/Roboto-Medium.ttf);}
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+
+/*--Navigation--*/
+
+
+
+.nav-menu{
+    position: relative;
+    display: flex;
+    height: 70px;
+}
+
+.nav-brand{
+    height: 100%;
+}
+
+.nav-brand img{
+    width: 110px;
+    position: absolute;
+    margin: 0px 15px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 24px;
+    
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins-Regular';
+}
+
+.nav-items .nav-link a{
+    color: white;
+    
+}
+
+.nav-link{
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.nav-link:nth-child(3){
+    min-width: 160px;
+}
+
+
+/*--Navigation x--*/
+
+/*--main--*/
+
+/*--bio--*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px;
+    font-family: 'Poppins-Regular';
+}
+
+.biographie{
+    margin-bottom: 30px;
+    display: flex;
+    padding: 30px;
+    padding-bottom: 80px;
+    border-bottom: solid #509B97 5px;
+}
+
+.biographie .photo1{
+    text-align: center;
+    width: 50%;
+}
+
+.biographie .photo1 img{
+    max-width: 90%;
+    border-radius: 20px;
+    height: auto;
+    border: 1px ;
+    padding: 1px;
+    box-shadow: 0px 10px 10px #555555;
+}
+
+.text1{
+    color: #5e5e5e;
+    height: auto;
+    width: 50%;
+}
+
+.biographie .text1 .title{
+    text-align: center;
+    height: auto;
+}
+
+.biographie .text1 .title h2{
+    color: #a09e9e;
+    margin-bottom: 40px;
+    height: auto;
+}
+
+.biographie .text1 .title h1{
+    color: #A87900;
+    font-size: 30px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.biographie .text1 p{
+    font-size: 24px;
+    margin: 30px;
+}
+
+/*--bio x--*/
+
+/*--expo --*/
+.expo{
+    display: flex;
+    padding: 30px;
+    padding-bottom: 80px;
+    
+}
+
+.expo .photo2{
+    width: 50%;
+    text-align: center;
+}
+
+.expo .photo2 img{
+    width: 90%;
+    border-radius: 20px;
+    height: auto;
+    border: 1px ;
+    padding: 1px;
+    box-shadow: 0px 10px 10px #555555;   
+}
+
+.expo .text2{
+    color: #5e5e5e;
+    height: auto;
+    width: 50%;
+}
+
+.expo .text2 .title2{
+    text-align: center;
+    color: #a09e9e;
+    margin-bottom: 40px;
+    height: auto;
+}
+
+
+.expo .text2 ul {
+    list-style: none;
+    font-size: 82px; 
+}
+
+.expo .text2 ul li{
+    margin: 30px;
+    font-size: 24px;
+}
+
+.expo .text2 ul li::before {
+    content: "\2022";
+    color: #A87900;
+    font-weight: bold;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -1em;
+}
+
+/*--expo X--*/
+
+/*--footer--*/
+footer{
+    background-color: #509B97;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+    padding: 0px 15px;
+    font-size: 24px;
+    font-family: 'Poppins-Regular';
+  }
+  
+.social-network{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.social-network h4{
+    margin-right: 15px; 
+}
+
+.social-network a{
+    color: white;
+    margin-right: 10px; 
+}
+
+/*--footer x--*/
+
+/*--main x--*/
+@media only screen and (max-width: 1080px){
+    .nav-link:nth-child(3){
+        min-width: 180px;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    /*--navbar--*/
+
+
+    .nav-menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        align-items: center;
+        height: 290px;
+        flex-direction: column;
+        width: 200px;
+        
+    }
+
+    .nav-brand img{
+        display: flex;
+        width: 150px;
+        align-items: center;
+    }
+
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+       position: relative;
+    }
+    
+    .nav-brand{
+        position: absolute;
+        position: relative;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .nav-items .nav-link{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #509B97;
+        margin: 6px 0px; 
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*--navbar x--*/
+
+    /*--main--*/
+
+    main{
+        margin: 0px 10px;
+    }
+    /*--bio--*/
+    .biographie{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+        padding-bottom: 80px;
+        border-bottom: solid #509B97 5px;
+    }
+
+    .text1{
+        height: auto;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .biographie .photo1{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        
+    }
+
+    .biographie .photo1 img{
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        height: auto;
+        max-width: 80%;
+    }
+
+    .text1{
+        color: #5e5e5e;
+        height: auto;
+        width: 90%;
+    }
+
+    .biographie .text1 p{
+        font-size: 24px;
+        margin: 5px;
+        padding-bottom: 30px;
+    }
+    /*--bio--*/
+
+    /*--expo--*/
+    .expo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+
+    .expo .text2{
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        height: auto;
+        width: 90%;
+    }
+
+    .expo .text2 ul li{
+        margin: 0px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .expo .photo2{
+        width: 90%;
+        text-align: center;
+    }
+
+    .expo .photo2 img{
+        max-width: 80%;
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .expo .text2 ul li::before {
+        content: "\2022";
+        color: #A87900;
+        font-weight: bold;
+        display: inline-block; 
+        width: 22px;
+        margin-left: 0;
+       
+    }
+    /*--expo x--*/
+
+    /*--main x--*/
+    
+    /*--footer--*/
+
+    footer{
+        background-color: #509B97;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 70px;
+        padding: 15px 0px;
+        color: white;
+    }
+      
+    .social-network{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    /*-- footer x--*/
+}
+
+
+@media only screen and (max-width: 380px){ 
+    footer{
+        font-size: 100%;
+    }
+      
+}
