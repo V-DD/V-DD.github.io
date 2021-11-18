@@ -1,0 +1,294 @@
+
+
+/*--content--*/
+
+.header_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content_text a{
+  text-decoration: none;
+  color: black;
+}
+
+.content_text {
+  position: absolute;
+  color: white;
+  margin-left: 30px;
+  font-size: 25px;
+  z-index: 1;
+}
+
+
+.image_bg img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+
+
+.content_text button {
+    margin-top: 15px;
+    width: 50%;
+    height: 45px;
+    background-color: #ffffff;
+    border: solid #ffffff;
+    border-radius: 50px;
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.content_text button:hover {
+    opacity: 0.9;
+  }
+
+
+
+
+
+  .product{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(231, 231, 231);
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+
+.content_text{
+    text-align: center;
+  }
+
+
+  .shoe_man{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    }
+
+    
+  .shoe_woman{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+
+  }
+
+  .shoe_kid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+  }
+  
+  .shoe{
+      background-color: white;
+      margin-top: 20px;
+  }
+
+
+  .shoe p{
+    color: grey;
+    font-size: 16px;
+  }
+
+
+.product_man .shoe_man img{
+    width: 18vw;
+}
+.product_woman .shoe_woman img{
+    width: 18vw;
+}
+.product_kid .shoe_kid img{
+    width: 18vw;
+}
+
+.product_woman{
+    margin-top: 40px;
+}
+.product_kid{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+/*--footer--*/
+.contact {
+  background-color: #003f53;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+.contact_us {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  margin-top: 20px;
+}
+.info a {
+  color: white;
+  text-decoration: none;
+}
+
+.about_us {
+  margin-right: 50px;
+}
+
+.networks img {
+  width: 30px;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+
+.social_networks ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.social_networks p {
+  margin-top: 10px;
+}
+
+.about_us {
+  list-style-type: none;
+  padding: 0;
+}
+
+.help {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  
+}
+footer ul li {
+  margin-left: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+/*--content--*/
+.shoe_man{
+    grid-template-columns: auto auto auto;
+    }
+
+    
+  .shoe_woman{
+    grid-template-columns: auto auto auto;
+  }
+
+  .shoe_kid{
+    grid-template-columns: auto auto auto;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    /*--content--*/
+.shoe_man{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    }
+
+    
+  .shoe_woman{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+
+  }
+
+  .shoe_kid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    /*--content--*/
+    .content_text {
+      font-size: 20px;
+    }
+
+
+.shoe_man{
+    display: grid;
+    grid-template-columns: auto ;
+    }
+
+    
+  .shoe_woman{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+
+  .shoe_kid{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+
+  .product_man .shoe_man img{
+    width: 55vw;
+}
+.product_woman .shoe_woman img{
+    width: 55vw;
+}
+.product_kid .shoe_kid img{
+    width: 55vw;
+}
+
+
+
+
+
+}

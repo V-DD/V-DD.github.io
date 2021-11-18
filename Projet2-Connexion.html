@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./Projet2-connexion.css">
+    <link rel="stylesheet" href="./Projet2-footer.css" />
+    <link rel="stylesheet" href="./Projet2-nav.css" />
+</head>
+
+<body>
+
+
+    <!--navigation-->
+    <nav class="navbar" role="navigation">
+        <div class="navbar_logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+
+
+        <ul class="navbar_links">
+            <li class="navbar_link"><a href="./Projet2-accueil.html">Accueil</a></li>
+            <li class="navbar_link"><a href="#">Homme</a></li>
+            <li class="navbar_link"><a href="#">Femme</a></li>
+            <li class="navbar_link"><a href="#">Enfant</a></li>
+            <li class="navbar_link"><a href="./Projet2-connexion.html">Se connecter</a></li>
+        </ul>
+
+        <div class="topnav">
+            <input type="text" placeholder="Chercher.." class="search">
+            <ion-icon name="search"></ion-icon>
+        </div>
+
+
+        <div class="cart">
+            <img src="./images/cart.png" alt="cart">
+        </div>
+
+
+
+        <button class="burger">
+            <sapan class="bar"></sapan>
+        </button>
+    </nav>
+
+
+
+
+
+    <!--formulaire-->
+
+    
+
+    <div class="container">
+
+        <div class="header">
+            <h2>DEVENIR MEMBRE</h2>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="first_name">Prénom</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Tom"/>
+                <ion-icon name="checkmark-circle" class="success-icon"></ion-icon>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="last_name">Nom</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Dupont"/>
+                <ion-icon name="checkmark-circle" class="success-icon"></ion-icon>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" name="email" id="email" placeholder="tom@gmail.com"/>
+                <ion-icon name="checkmark-circle" class="success-icon"></ion-icon>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="Password">Mot de passe</label>
+                <input type="password" placeholder="Mot de passe ici" id="password"/>
+                <ion-icon name="checkmark-circle" class="success-icon"></ion-icon>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="Password two">Confirmer le mot de passe</label>
+                <input type="password" placeholder="Mot de passe ici" id="password2"/>
+                <ion-icon name="checkmark-circle" class="success-icon"></ion-icon>
+                <small>Error message</small>
+            </div>
+
+            <div class="check">
+            <button>Submit</button>
+            </div>
+            
+        </form>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <section class="contact">
+
+        <div class="contact_us">
+            <ul class="about_us">
+                <li class="info">
+                    <h1>A propos de nous<h1>
+                </li>
+                <li class="info"><a href="">Notre histoire</a></li>
+                <li class="info"><a href="">Press</a></li>
+                <li class="info"><a href="">Emploi</a></li>
+                <li class="info"><a href="">Localisation de magasins</a></li>
+                <li class="info"><a href="">Mobile Apps</a></li>
+            </ul>
+
+            <ul class="help">
+                <li class="info">
+                    <h1>Assistance<h1>
+                </li>
+                <li class="info"><a href="">Aide</a></li>
+                <li class="info"><a href="">Remboursement</a></li>
+                <li class="info"><a href="">Réduction étudiants</a></li>
+                <li class="info"><a href="">Cadeaux</a></li>
+                <li class="info"><a href="">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="social_networks">
+            <h1>Nous contacter</h1>
+            <p>Restez informé des nouveautés et <br>des nouvelles offres.</p>
+            <ul class="networks">
+                <li><img src="./images/social-n1.png" alt=""></li>
+                <li><img src="./images/social-n2.png" alt=""></li>
+                <li><img src="./images/social-n3.png" alt=""></li>
+                <li><img src="./images/social-n4.png" alt=""></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2021 logo Inc, Tous droits réservés</p>
+
+        <ul>
+            <li>Politique de Confidentialité</li>
+            <li>Conditions d'utilisation</li>
+            <li>Les Cookies</li>
+        </ul>
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./Projet2-connexion.js"></script>
+    <script src="./Projet2-nav.js"></script>
+</body>
+
+</html>
