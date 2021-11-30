@@ -96,8 +96,16 @@
   .shoe p{
     color: grey;
     font-size: 16px;
+    margin-left: 5px;
   }
 
+  .shoe h4{
+    margin-left: 5px;
+  }
+
+  .price{
+    margin-left: 5px;
+  }
 
 .product_man .shoe_man img{
     width: 18vw;
