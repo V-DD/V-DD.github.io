@@ -99,6 +99,7 @@ body {
 .welcome p {
   font-size: 2em;
   font-family: Helvetica;
+  color: #e7e7e7;
 }
 
 /*--end welcome--*/
