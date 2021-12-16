@@ -1,0 +1,43 @@
+:root{
+    --bg-dark : #2E2F2F ;
+    --bg-light : #C5AFA4 ;
+    --bg-red : #A41C1C;
+    --bg-gold : #DCA049;
+
+    --text-white : white;
+    --text-black : black;
+    --text-hover : #A41C1C;
+    --text-gold-outline : #7D570D;
+
+    --black60 : rgba(0,0,0,0.6);
+}
+
+/******************************* Global Classes *************************************/
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.max-width{
+    min-width: 100%;
+}
+
+.mid-width{
+    min-width: 50%;
+}
+
+.tiny-width{
+    min-width: 25%;
+}
+
+.centered{
+    justify-content: center;
+    align-items: center;
+}

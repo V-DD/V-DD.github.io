@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Global.css">
+  <link rel="stylesheet" href="./NavFooter.css">
+  <link rel="stylesheet" href="./StylesRoll.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="nav-container flex-row">
+    <div class="logo"><img id="img-logo" src="./Assets/LogoV2.png" alt="logo MACROMANIA"></div>
+    <div class="menu-container flex-row centered">
+      <div class="menu-boutton"><a class="nav-links" href="./Accueil.html">Accueil</a></div>
+      <div class="menu-boutton"><a class="nav-links" href="./indexV.html">Boutique</a></div>
+      <div class="menu-boutton"><a class="nav-links" href="./RollPage.html">Cadeaux</a></div>
+      <div class="menu-boutton"><a class="nav-links" href="./Formulaire.html">Contactez-nous</a></div>
+      <div class="menu-boutton"><a class="nav-links" href="./panierV.html">Panier</a></div>
+      <a href=""><img id="shop-cart" src="./Assets/Rectangle 41.png" alt="Cart Icon"></a>
+    </div>
+  </nav>
+
+
+  <section class="display">
+    <div class="scene" id="scene1">
+      <div class="carousel">
+        <div id="carousel__cell__1" class="carousel__cell">Fred</div>
+        <div id="carousel__cell__2" class="carousel__cell">Paul</div>
+        <div id="carousel__cell__3" class="carousel__cell">Adrien</div>
+        <div id="carousel__cell__4" class="carousel__cell">Yassine</div>
+        <div id="carousel__cell__5" class="carousel__cell">Joël</div>
+        <div id="carousel__cell__6" class="carousel__cell">Stephan</div>
+        <div id="carousel__cell__7" class="carousel__cell">Jean</div>
+        <div id="carousel__cell__8" class="carousel__cell">Virgile</div>
+        <div id="carousel__cell__9" class="carousel__cell">Cyril</div>
+        <div id="carousel__cell__10" class="carousel__cell">Quentin</div>
+        <div id="carousel__cell__11" class="carousel__cell">Benjamin</div>
+        <div id="carousel__cell__12" class="carousel__cell">Yanis</div>
+        <div id="carousel__cell__13" class="carousel__cell">Pierre</div>
+        <div id="carousel__cell__14" class="carousel__cell">Nicolas</div>
+        <div id="carousel__cell__15" class="carousel__cell">Bertrand</div>
+      </div>
+    </div>
+
+    <div class="carousel-options">
+      <p>
+        <label class="cells-number">
+          Cells
+          <input class="cells-range" type="range" min="3" max="15" value="15" />
+        </label>
+      </p>
+      <p class="next-prev-button">
+        <button class="previous-button">Previous</button>
+        <button class="next-button">Next</button>
+      </p>
+      <p>
+        <button class="roll">Play</button>
+      </p>
+      <p class="ori-container">
+        Orientation:
+        <label>
+          <input id="hori" type="radio" name="orientation" value="horizontal" />
+          horizontal
+        </label>
+        <label>
+          <input id="verti" type="radio" name="orientation" value="vertical" checked />
+          vertical
+        </label>
+      </p>
+    </div>
+    <div id="winner__container"></div>
+
+  </section>
+
+  <footer class="footer-container flex-row">
+    <div class="footer-name centered">
+      <p>©MACROMANIA</p>
+    </div>
+    <div class="flex-row centered">
+      <div class="menu-boutton-footer"><a class="nav-links-footer" href="">Mentions légales</a></div>
+      <div class="menu-boutton-footer"><a class="nav-links-footer" href="">Plan du site</a></div>
+    </div>
+  </footer>
+  <script src="./ScriptRoll.js"></script>
+</body>
+
+</html>

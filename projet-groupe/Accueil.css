@@ -1,0 +1,124 @@
+/* -----------------------------------------Nav Bar---------------------------------------------------------- */
+body{
+    overflow: hidden;
+}
+.nav-container{
+    height: 100px;
+    align-content: center;
+}
+.footer-container{
+    height: 100px;
+}
+#img-logo{
+    max-height: 100px;
+}
+#img-logo{
+    width: 100%;
+}
+.menu-container{
+    display: none;
+    visibility: hidden;
+}
+.logo{
+    min-width: 100%;
+}
+/* -------------------X----------------------Nav Bar------------------------------------X---------------------- */
+/* -------------------------------------------Main-------------------------------------------------------------- */
+.wrapper{
+    height: 100vh;
+}
+.main{
+    background:url(./Assets/image4.jpg);
+    background-repeat: no-repeat;
+    height: calc(100vh - 200px);
+    background-size: cover;
+}
+.main-button-container{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-button{
+    width: 20vw;
+    min-width: 150px;
+    height: 7vh;
+    border: 1px solid #0A4872;
+    border-radius: 15px;
+    background: #0A4872;
+    margin-left: 10vw;
+    position: relative;
+    z-index: 0;
+}
+.main-links{
+    font-size: 1.5rem;
+}
+/* --------------X-----------------------------Main-------------------------------------------X------------------- */
+/* -------------------------------------------Animation-------------------------------------------------------------- */
+
+.main-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.main-button:active {
+    color: #000
+}
+
+.main-button:active:after {
+    background: transparent;
+}
+
+.main-button:hover:before {
+    opacity: 1;
+}
+
+.main-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* ----------------X---------------------------Animation--------------------------------------X------------------------ */
+/*---------------------------------------------------------------------------Querrys----------------------------------------------------------------------------------*/
+@media (max-width: 670px){
+    #img-logo{
+        transform: scale(2);
+    }
+}
+@media (max-width: 440px){
+    #img-logo{
+        transform: scale(3);
+    }
+    .footer-container{
+        font-size: 0.8rem;
+    }
+    .main-button-container{
+        align-items: center;
+    }
+}

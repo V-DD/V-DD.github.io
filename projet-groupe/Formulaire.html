@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./Global.css" />
+  <link rel="stylesheet" href="./NavFooter.css" />
+  <link rel="stylesheet" href="./Formulaire.css" />
+</head>
+
+<body>
+
+
+  <section class="parallax">
+
+
+    <!--start navigation-->
+
+    <nav class="nav-container flex-row">
+      
+      <div class="logo">
+        <img id="img-logo" src="./Assets/LogoV2.png" alt="logo MACROMANIA" />
+      </div>
+
+      <div class="menu-container flex-row centered">
+        <div class="menu-boutton"><a class="nav-links" href="./Accueil.html">Accueil</a></div>
+        
+        <div class="menu-boutton">
+          <a class="nav-links" href="./indexV.html">Boutique</a>
+        </div>
+        
+        <div class="menu-boutton"><a class="nav-links" href="./RollPage.html">Cadeaux</a></div>
+        
+        <div class="menu-boutton">
+          <a class="nav-links" href="./Formulaire.html">Contactez-nous</a>
+        </div>
+
+        <div class="menu-boutton"><a class="nav-links" href="./panierV.html">Panier</a></div>
+
+
+        <div class="cart">
+          <a href=""><img id="shop-cart" src="./Assets/Rectangle 41.png" alt="Cart Icon"></a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!--end navigation-->
+
+    <!--start form-->
+    <div class="form-content">
+
+      <div class="container-form">
+
+        <form id="form-1">
+
+            <div class="form-group">
+              <label id="name-label" for="nom">Nom</label>
+              <input type="text" id="nom" name="form-control" placeholder="" required>
+            </div>
+
+            <div class="form-group">
+              <label id="prenom-label" for="name">Prénom</label>
+              <input type="text" id="surname" name="form-control" placeholder="" required>
+            </div>
+
+            <div class="form-group">
+              <label id="email-label">E-mail</label>
+              <input type="text" id="email" name="form-control" placeholder="" required>
+            </div>
+
+          <div class="form-group1">
+            
+            <p>Type de demande</p>
+            <select id="favorite" required>
+              <option disabled="" selected="" value=""></option>
+              <option>Jeux Vidéo</option>
+              <option>Vêtements</option>
+              <option>Accessoires</option>
+              <option>Cadeaux</option>
+              <option>Autre</option>
+              </optgroup>
+            </select>
+
+          </div>
+
+          <div class="form-group">
+            <p>Message</p>
+            <textarea type="text" rows="10" cols="55" id="message" name="Message"
+              placeholder="" required></textarea><br>
+          </div>
+
+          <div class="form-group center">
+            <button type="button" value="Submit" id="show-login">Envoyer</button><br>
+          </div>
+
+
+        </form>
+
+        <div class="contact">
+          <h1>CONTACTEZ-NOUS</h1>
+
+          <div class="form-content1">
+            <div class="reseaux">
+              <p>Autres moyens de contact</p>
+              <ul>
+                <li><img id="icons"
+                    src="Assets/facebook.png"
+                    alt="Cart Icon" /></a>Facebook/Macromania</li>
+                <li><img id="icons"
+                    src="Assets/telegram.png"
+                    alt="Cart Icon" /></a>Telegram/Macromania</li>
+                <li><img id="icons"
+                    src="Assets/whatsapp.png"
+                    alt="Cart Icon" /></a>Whatsapp/Macromania</li>
+                <li><img id="icons"
+                    src="Assets/instagram.png"
+                    alt="Cart Icon" /></a>Instagram/Macromania</li>
+                <li><img id="icons"
+                    src="Assets/twitter.png"
+                    alt="Cart Icon" /></a>Twitter/Macromania</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="popup">
+
+      <div class="close-btn">&times</div>
+
+        <p>Félicitations votre message a bien été envoyé !</p>  
+    </div>
+
+  </section>
+
+<!--end form-->
+
+
+
+
+  <!--start footer-->
+
+
+
+  </section>
+
+  <footer class="footer-container flex-row">
+    <div class="footer-name centered">
+      <p>©MACROMANIA</p>
+    </div>
+    <div class="flex-row centered">
+      <div class="menu-boutton-footer">
+        <a class="nav-links-footer" href="">Mentions légales</a>
+      </div>
+      <div class="menu-boutton-footer">
+        <a class="nav-links-footer" href="">Plan du site</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--end footer-->
+  <script src="./Formulaire.js"></script>
+</body>
+
+</html>

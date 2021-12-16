@@ -1,0 +1,135 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.nav-container{
+  background-color: var(--bg-dark);
+  justify-content: space-between;
+  position: inherit;
+}
+
+.scene {
+  border: 1px solid #CCC;
+  position: relative;
+  width: 210px;
+  height: 140px;
+  margin: 30vh auto 30vh auto;
+  perspective: 1000px;
+  grid-area: roue;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-color: #544949;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-black);
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+  background: linear-gradient(#C24B4B, #F0F0F0, #CA6969) ;
+}
+
+.cells-number, .next-prev-button, .ori-container{
+    display: none;
+    visibility: hidden;
+}
+
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+
+
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: hsla(0, 0%, 100%, 0.8);
+  grid-area: boutton;
+  background: transparent;
+}
+
+#winner__container{
+  grid-area: winner;
+  height: 100%;
+  margin-bottom: 5vh;
+}
+#winner__display{
+  display: flex;
+  min-height: 80vh;
+  max-width: 50vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3vw;
+  color: var(--bg-gold);
+  -webkit-text-stroke-color: var(--text-gold-outline);
+  -webkit-text-stroke-width: 2px;
+}
+.roll{
+  margin-top: 30vh;
+  background-color: var(--bg-gold);
+  color: var(--text-white);
+  width: 150px;
+  height: 100px;
+  border-radius: 15px;
+  border: solid 1px var(--bg-gold);
+  font-size: 3rem;
+}
+.display{
+  display: grid;
+  grid-template-areas: "roue boutton winner";
+}
+
+/*--------------------------------------------- Querries -----------------------------------------------------*/
+@media (max-width: 670px){
+  .display{
+    grid-template-areas: 
+    "roue winner"
+    "boutton winner";
+  }
+  .roll{
+    margin-top: inherit;
+  }
+  #winner__display{
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 470px){
+  .display{
+    grid-template-areas:
+    "roue"
+    "boutton"
+    "winner";
+  }
+  #winner__display{
+    min-height: inherit;
+    max-width: inherit;
+  }
+}

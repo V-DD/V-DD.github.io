@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./Global.css" />
+  <link rel="stylesheet" href="./NavFooter.css" />
+  <link rel="stylesheet" href="./styleV.css" />
+</head>
+
+<body>
+
+  <section class="parallax">
+
+    <!--start navigation-->
+
+    <nav class="nav-container flex-row">
+      
+      <div class="logo">
+        <img id="img-logo" src="./Assets/LogoV2.png" alt="logo MACROMANIA" />
+      </div>
+
+      <div class="menu-container flex-row centered">
+        <div class="menu-boutton"><a class="nav-links" href="./Accueil.html">Accueil</a></div>
+        
+        <div class="menu-boutton">
+          <a class="nav-links" href="./indexV.html">Boutique</a>
+        </div>
+        
+        <div class="menu-boutton"><a class="nav-links" href="./RollPage.html">Cadeaux</a></div>
+        
+        <div class="menu-boutton">
+          <a class="nav-links" href="./Formulaire.html">Contactez-nous</a>
+        </div>
+
+        <div class="menu-boutton"><a class="nav-links" href="./panierV.html">Panier</a></div>
+
+
+        <div class="cart">
+          <a href=""><img id="shop-cart" src="./Assets/Rectangle 41.png" alt="Cart Icon"><span id="cartNum">0</span></a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!--end navigation-->
+
+    <section class="container">
+
+      <!--start video-->
+      <div class="accueil-video">
+        <div class="content-video">
+          <video class="video-slide" src="Assets/wow.mp4" autoplay muted loop></video>
+        </div>
+        <h1></h1>
+      </div>
+      <!--end video-->
+
+      <!--start carousel-->
+      <div class="parent">
+
+        <div id="leftarrow" onclick="moveLeft()">
+          <button>&lt;</button>
+        </div>
+
+        <div class="child" id="c1">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/header.jpg?t=1634799635" alt="image">
+        </div>
+        <div class="child" id="c2">
+          <img src="Assets/image3.jpg" alt="image">
+        </div>
+        <div class="child" id="c3">
+          <img
+            src="https://www.gamerroof.com/wp-content/uploads/2019/05/Injustice-2-Legendary-Edition-Full-Version-Free-Download-.png"
+            alt="image">
+        </div>
+        <div class="child" id="c4">
+          <img src="https://www.digiseller.ru/preview/847905/p1_3077466_a10792a6.jpg" alt="image">
+        </div>
+        <div class="child" id="c5">
+          <img src="https://img.g2a.com/323x433/1x1x0/back-4-blood-pc-steam-key-europe/5fdc64c446177c139d277b92"
+            alt="image">
+        </div>
+        <div class="child" id="c6">
+          <img src="Assets/image1.jpg" alt="image">
+        </div>
+        <div class="child" id="c7">
+          <img
+            src="https://img.g2a.com/1080x1080/1x1x0/red-dead-redemption-2-special-edition-rockstar-key-global/5dc40c6446177c186f177273"
+            alt="image">
+        </div>
+
+        <div id="rightarrow" onclick="moveRight()">
+          <button>&gt;</button>
+        </div>
+
+      </div>
+
+      <!--end carousel-->
+
+      <section class="all-content">
+
+        <!--start category-->
+
+        <select id="options">
+          <option disabled="" selected="" value="">Catégories</option>
+          <option>Jeux Video</option>
+          <option>Jeux de Société</option>
+          <option>Accessoires</option>
+          </optgroup>
+        </select>
+
+        <!--end category-->
+
+        <!--start products-->
+
+        <div id="grid-container">
+
+          <div class="product-tile">
+            <a href="gta.html" class="cart">
+              <img
+                src="https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_2560x1440_Landscaped%20Store-2560x1440-79155f950f32c9790073feaccae570fb.jpg"
+                alt="Image-projet">
+            <a class="add-cart cart4"><button>AJOUTER AU PANIER</button></a>
+
+            </a>
+          </div>
+
+          <div class="product-tile">
+            <a href="">
+              <img src="https://global-img.gamergen.com/overwatch-cover_0000837895.jpg" alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img
+                src="https://d3isma7snj3lcx.cloudfront.net/images/photos/30/50/84/07/mario-sports-superstars-artwork-ME3050840737_2.jpg"
+                alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/3023/kYTRYlKE7x4NA1ckFbLDJBp5.png"
+                alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img
+                src="https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_TheElderScrollsVSkyrim_image500w.jpg"
+                alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img src="https://image.api.playstation.com/vulcan/ap/rnd/202108/2600/hdoOAnRlmDSm5kCcgggrXnIT.png"
+                alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img src="https://i.ytimg.com/vi/hmgBmLztEsw/hqdefault.jpg" alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img src="https://media.senscritique.com/media/000007027766/source_big/Dark_Souls_II.jpg"
+                alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+          <div class="product-tile">
+            <a href="">
+              <img src="https://fyre.cdn.sewest.net/maple/608afaa6906368001312a76a/social_share-i7TZ7xcWN.png"
+                alt="image-project">
+              <button>AJOUTER AU PANIER</button>
+            </a>
+          </div>
+
+          <!--end products-->
+
+        </div>
+
+        <div class="button-bottom">
+
+          <div class="leftarrow">
+            <button>
+              <</button>
+          </div>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <div class="rightarrow">
+            <button>></button>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+    <!--start footer-->
+
+    <footer class="footer-container flex-row">
+      <div class="footer-name centered">
+        <p>©MACROMANIA</p>
+      </div>
+      <div class="flex-row centered">
+        <div class="menu-boutton-footer">
+          <a class="nav-links-footer" href="">Mentions légales</a>
+        </div>
+        <div class="menu-boutton-footer">
+          <a class="nav-links-footer" href="">Plan du site</a>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <!--end footer-->
+  <script src="./mainV.js"></script>
+</body>
+
+</html>

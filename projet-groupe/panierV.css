@@ -1,0 +1,92 @@
+/*--start navigation modification--*/
+
+#shop-cart{
+  max-width: 60px;
+  padding: 10px;
+}
+
+.nav-container{
+  z-index: 3;
+}
+/*--end navigation modification--*/
+
+/*--start footer modification--*/
+.footer-container{
+  position: relative;
+}
+
+/*--end footer modification--*/
+
+
+#panier-content{
+  margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 50px;
+}
+
+#panier img{
+    padding-top: 40px;
+    width: 400px;
+    padding-bottom: 25px;
+}
+
+#panier-message{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 26px;
+    color: rgb(83, 81, 81);
+}
+
+#lien-boutique{
+    cursor: pointer;
+}
+#button-panier #button3 {
+    background-color: hsl(35, 52%, 52%);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .footer-container{
+      position: fixed;
+    }
+    
+    #panier-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+
+        padding: 55px;
+    }
+    
+    #panier img{
+        padding-top: 70px;
+        width: 100px;
+        padding-bottom: 20px;
+    }
+    
+    #panier-message{
+        padding-bottom: 23px;
+    }
+    
+    #button-panier #button3 {
+      background-color: #D4A869;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        border-radius: 7px;
+        border: none;
+        color: white;
+      }
+}    

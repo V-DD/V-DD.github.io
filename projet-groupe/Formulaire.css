@@ -1,0 +1,329 @@
+/*--start navigation modification--*/
+
+#shop-cart{
+  max-width: 60px;
+  padding: 10px;
+}
+
+.nav-container{
+  z-index: 3;
+}
+/*--end navigation modification--*/
+
+/*--start footer modification--*/
+.footer-container{
+  position: relative;
+}
+
+/*--end footer modification--*/
+
+
+
+
+
+
+
+
+.parallax{
+    background: url("Assets/image5.jpg") no-repeat fixed;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+
+.form-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 990px;
+  
+  
+}
+
+.container-form{
+  position: relative;
+  
+}
+
+#form-1 {
+  position: absolute;
+  width: 270px;
+  background-color: rgb(219, 219, 223);
+  color: white;
+  border-radius: 5px;
+  padding: 2.5rem;
+  right: 0;
+  z-index: 1;
+  top: -360px;
+  box-shadow: 5px 5px 10px rgb(42, 42, 43);
+  
+}
+
+.contact{
+  position: absolute;
+  background-color: #C5AFA4;
+  opacity: 92%;
+  padding: 2.5rem;
+  left: -180px;
+  bottom: -370px;
+  text-align: center;
+  width: 450px;
+  height: 760px;
+  z-index: 0;
+}
+
+.contact h1{
+  color: rgb(170, 69, 184);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1px;
+}
+
+select {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  border-radius: 5px
+}
+
+#nom {
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#surname{
+   margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#email{
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+textarea{
+ resize: none;
+ border: none;
+
+}
+
+#option{
+  border-radius: 5px;
+}
+
+#favorite{
+  width: 100%;
+  border: none;
+}
+
+#dropdown{
+  width: 100%;
+ 
+}
+
+#submit{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button{
+  padding: 10px;
+  background: hsl(35, 52%, 52%);
+  color: white;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#student{
+  padding-left: 5px;
+}
+
+label{
+  color: #000000;
+}
+
+.form-group{
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  margin-bottom:15px;
+}
+
+
+.form-content1{
+ position: relative;
+  display: flex;
+}
+
+.form-group1{
+  color: #000000;
+}
+
+.reseaux{
+  position: absolute;
+  list-style: none;
+  top: 60px;
+  right: 0;
+  width: 280px;
+  margin-left: 0;
+  color: black;
+  align-items: center;
+  text-align: center;
+}
+
+.reseaux ul{
+  list-style: none;
+  border-top: solid 1px;
+  margin-left: 0;
+
+}
+
+.reseaux li{
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 0;
+
+}
+
+.reseaux p{
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.contact h1{
+  font-weight: 900;
+  margin: 0;
+}
+
+
+.reseaux #icons{
+  width: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+/*--start popup--*/
+
+
+.center {
+  position: relative;
+}
+
+.popup{
+  
+  width: 400px;
+  height: 80px;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(20, 76, 150);
+  color: white;
+  transition: top 0.5s ease;
+  z-index: 1;
+
+}   
+
+.active{
+  top: 50%;
+  transition: top 0.5s ease;
+}
+
+
+.popup .close-btn{
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  width: 15px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+  #form-1{
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  .contact{
+    left: 0;
+    transform: translateX(-50%);
+    height: 1360px;
+    bottom: -720px;
+  width: 420px;
+
+  }
+
+  
+.form-content{
+  height: 160vh;
+}
+
+#form-1 {
+  position: absolute;
+  width: 250px;
+  background-color: rgb(219, 219, 223);
+  color: white;
+  border-radius: 5px;
+  padding: 2.5rem;
+  right: 0;
+  z-index: 2;
+  top: -600px;
+  box-shadow: 0px 0px 10px rgb(42, 42, 43);
+}
+
+
+.form-content1{
+   width: 100%;
+ }
+
+ 
+.reseaux{
+  width: 100%;
+  margin-top: 800px;
+}
+
+.reseaux ul{
+  list-style: none;
+  border-top: solid 1px;
+
+}
+
+.reseaux li{
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+
+/*--start popup--*/
+
+.popup.active{
+  left: 50%;
+  width: 315px;
+  height: 50px;
+}
+}
