@@ -317,8 +317,8 @@ footer {
   }
 }
 
-@media only screen and (max-width: 300px) {
-  
+@media only screen and (max-width: 400px) {
+    /*--welcome--*/
   .welcome h1 {
     font-size: 25px;
   }
